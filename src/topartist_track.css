@@ -1,0 +1,28 @@
+.list{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.track_img{
+    width: 200px;
+}
+.artist_list{
+display: grid;
+grid-template-columns: auto auto auto auto;
+ gap:100px;
+}
+.track_txt{
+    width: 200px;
+}
+.track_txt p{
+ color: grey;
+ font-size: 14px;
+ font-weight: 500;
+}
+.artist_img{
+ border-radius:50% ;
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+}

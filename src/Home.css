@@ -1,0 +1,56 @@
+.home_img1{
+    width: 1000px;
+    height: 350px;
+    object-fit: cover;
+}
+.H_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+   
+   
+}
+.H_text1{
+    position: absolute;
+   font-size: 60px;
+    left: 265px;
+    top: 280px;
+    font-weight: 900;
+    transition: 350ms;
+
+}
+.H_text2{
+    position: absolute;
+    left: 1110px;
+    font-size: 60px;
+top: 322px;
+font-weight: 800;
+transition: 350ms;
+
+}
+.H_text2:hover{
+    font-size:80px ;
+    background: linear-gradient(90deg,#00dbde,#fc00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;   
+}
+.H_text1:hover{
+    font-size: 65px;
+}
+@media only screen and (max-width: 600px) {
+    .H_text2{
+        display: none;
+        }
+    .H_text1{
+        font-size: 30px;
+        top: 90%;
+    }
+    .home_img1{
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top:50%;
+        left: 40px;
+    }
+}

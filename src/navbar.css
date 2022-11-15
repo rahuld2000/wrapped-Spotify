@@ -1,0 +1,79 @@
+.home{
+   background-color: black;
+    color: white;
+}
+.nav_logo{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 37.7695px;
+    line-height: 94px;
+    margin: 10px 30px 0px 30px;
+}
+.nav_logo h3{
+    font-weight: 400;
+font-size: 27.2704px;
+line-height: 31px;
+}
+.nav_bar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 100px 0px 100px;
+}
+
+.nav_type {
+    display: flex;
+    
+}
+.nav_type li{
+    display: flex;
+   padding-left: 80px;
+}
+.nav_type li:hover{
+    text-shadow: 0 0 10px white,0 0 20px white,
+    0 0 40px white,0 0 80px white,0 0 120px white;
+}
+
+.types{
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+font-size: 21.8203px;
+transition: 100ms;
+}
+.active{
+    font-size: 30px;
+    font-weight: 500;
+    color: #16b04c;
+    text-shadow: none;
+}
+.nav_home{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+font-size: 40.9056px;
+}
+.home_logo{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+}
+.profile_page{
+ display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    gap: 8px;
+}
+.profile_page:hover{
+    color: rgb(201, 201, 201);
+}
+.profile_page img{
+    width: 50px;
+    border-radius: 50%;
+}
