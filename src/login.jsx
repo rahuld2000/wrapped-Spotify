@@ -10,7 +10,6 @@ const Login = () => {
     const client_ID = "711a022098d84f0ab4a1d35724c8b163";
     const redirect_URL = "https://wrapped-ivory.vercel.app/";
     const auth_URL = "https://accounts.spotify.com/authorize";
-    
     const respnse_TYPE = "token";
     const Scope="user-top-read playlist-read-private";
     const [token,setToken]=useState("");
