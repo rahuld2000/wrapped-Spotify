@@ -4,6 +4,7 @@ import "./playlist.css"
 import {motion} from "framer-motion"
 const Playlist = () => {
     const [playlist, setplaylist] = useState("");
+ 
     useEffect(() => {
         const api = () => {
             axios.get("https://api.spotify.com/v1/me/playlists", {
@@ -12,7 +13,9 @@ const Playlist = () => {
                 }
             }).then(response => {
                 setplaylist(response.data);
+                
                 console.log(playlist);
+                
             })
         }
         api();
@@ -38,8 +41,8 @@ const Playlist = () => {
 
                                 return(
                                     <div key={index}>
-                                      
                                         <div className="track_txt">
+                                        <img src={play.images[0].url} alt="" width="180px" />
                                         <h3>{play.name}</h3>
                                         <p>{play.description}</p>
                                         </div>

@@ -4,9 +4,10 @@ import "./topartist_track.css"
 import {motion} from "framer-motion"
 const Toptrack = () => {
     const [Tracks, setTrack] = useState("");
+    const [term,setTerm]=useState("short_term")
     useEffect(() => {
         const api = () => {
-            axios.get("https://api.spotify.com/v1/me/top/tracks", {
+            axios.get(`https://api.spotify.com/v1/me/top/tracks?limit=50&time_range=${term}`, {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`,
                 }
@@ -16,8 +17,19 @@ const Toptrack = () => {
             })
         }
         api();
-    }, [])
-
+    }, [term])
+    function short(){
+        setTerm("short_term")
+    }
+    function medium(){
+        setTerm("medium_term")
+        
+    }
+    function past(){
+        setTerm("long_term")
+    }
+    
+    
 
 
     return (
@@ -27,7 +39,11 @@ const Toptrack = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}>
             
-
+            <div className="duration">
+               <button onClick={short}>4 weeks</button>
+               <button onClick={medium}>6 months</button>
+               <button onClick={past}>All years</button>
+            </div>
             {
                 Tracks.items &&
                 <div className="list">
