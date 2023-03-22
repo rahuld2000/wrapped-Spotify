@@ -40,9 +40,9 @@ const Toptrack = () => {
         transition={{ duration: 1 }}>
             
             <div className="duration">
-               <button onClick={short}>4 weeks</button>
-               <button onClick={medium}>6 months</button>
-               <button onClick={past}>All years</button>
+               <button className="time" onClick={short}>4 weeks</button>
+               <button className="time" onClick={medium}>6 months</button>
+               <button className="time" onClick={past}>All years</button>
             </div>
             {
                 Tracks.items &&

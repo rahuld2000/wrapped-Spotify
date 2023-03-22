@@ -26,3 +26,20 @@ grid-template-columns: auto auto auto auto;
  height: 150px;
  object-fit: cover;
 }
+.duration{
+    display: flex;
+    justify-content: end;
+   padding-right: 15%;
+   padding-top: 30px;
+}
+.time{
+    color: white;
+    background-color: black;
+    border: none;
+    margin-left: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.time:active{
+    color: green;
+}
