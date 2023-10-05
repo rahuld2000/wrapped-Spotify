@@ -6,15 +6,10 @@
     display: flex;
     justify-content: space-between;
     font-weight: 700;
-    font-size: 37.7695px;
-    line-height: 94px;
+    font-size: 37px;
     margin: 10px 30px 0px 30px;
 }
-.nav_logo h3{
-    font-weight: 400;
-font-size: 27.2704px;
-line-height: 31px;
-}
+
 .nav_bar{
     list-style: none;
     display: flex;
@@ -30,10 +25,6 @@ line-height: 31px;
 .nav_type li{
     display: flex;
    padding-left: 80px;
-}
-.nav_type li:hover{
-    text-shadow: 0 0 10px white,0 0 20px white,
-    0 0 40px white,0 0 80px white,0 0 120px white;
 }
 
 .types{
@@ -70,10 +61,45 @@ font-size: 40.9056px;
     font-size: 20px;
     gap: 8px;
 }
-.profile_page:hover{
-    color: rgb(201, 201, 201);
-}
+
 .profile_page img{
     width: 50px;
     border-radius: 50%;
+}
+
+@media only screen and (min-width:600px){
+    .profile_page:hover{
+        color: rgb(201, 201, 201);
+    }
+    .nav_type li:hover{
+        text-shadow: 0 0 10px white,0 0 20px white,
+        0 0 40px white,0 0 80px white,0 0 120px white;
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    
+.nav_logo{
+    margin: 25px 10px 0px 10px;
+}
+.nav_type li{
+    padding-left: 0px;
+}
+.nav_bar{
+    gap: 90px;
+    margin: 40px 10px 30px 10px;
+}
+.nav_logo{
+    font-size: 26px;
+}
+.nav_logo img{
+    width: 40px;
+}
+.nav_home{
+    font-size: 25px;
+}
+.types{
+    font-size: 18px;
+}
 }

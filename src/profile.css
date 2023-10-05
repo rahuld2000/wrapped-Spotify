@@ -57,3 +57,10 @@ background: linear-gradient(180deg, #1ED760 0%, #020202 100%);
 .profile_cont2 button:hover{
     border: 2px solid white;
 }
+
+
+@media only screen and (max-width:600px){
+    .profile_main{
+        flex-direction: column;
+    }
+}

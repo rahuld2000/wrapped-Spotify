@@ -52,8 +52,9 @@ const Toptrack = () => {
                             Tracks.items.map((track, index) => {
 
                                 return (
-                                    <div key={index}>
-                                        <p>{index+1}</p>
+                                    <div className="artist_container" key={index}>
+                                    <div className="artist_index"> <p>{index+1}</p></div>
+                                       
                                         <img className="track_img" src={track.album.images[1].url} alt="error" />
                                         <div className="track_txt">
                                         <h4>{track.name}</h4>

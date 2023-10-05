@@ -47,15 +47,18 @@ function past(){
                 artists.items &&
                 <div className="list">
                     
-                    <div className="artist_list">
+                    <div className="artist2_list">
                         {
                             artists.items.map((artist, index) => {
 
                                 return (
-                                    <div key={index} >
-                                        <p>{index+1}</p>
+                                    <div className="artist_container" key={index} >
+                                       
                                         <img className="artist_img" src={artist.images[2].url} alt="error" />
+                                        <div className="artist_txt"> <p>{index+1}.</p>
                                         <h4>{artist.name}</h4>
+                                        </div>
+                                      
                                     </div>
                                 )
                             })

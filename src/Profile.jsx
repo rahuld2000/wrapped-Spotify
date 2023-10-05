@@ -40,7 +40,7 @@ const Profile = () => {
             <h1><Link className="profile_home" to="/">Home</Link></h1>
             <div className="profile_main">
                 <div className="profile_cont1">
-                    <img className="profile_img" src={image.url} alt="" />
+                    <img className="profile_img" src={image.url} alt="error" />
                 </div>
                 <div className="profile_cont2">
                  <p>Name: {profile.display_name}</p> 

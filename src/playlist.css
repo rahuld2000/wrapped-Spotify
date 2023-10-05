@@ -2,6 +2,15 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+  
     gap:50px 150px;
+}
+
+@media only screen and (max-width:600px) {
+    .playlist_list{
+    grid-template-columns: repeat(2,1fr); 
+    gap:10px;
+    }
+   
+    
 }

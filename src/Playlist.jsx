@@ -42,7 +42,7 @@ const Playlist = () => {
                                 return(
                                     <div key={index}>
                                         <div className="track_txt">
-                                        <img src={play.images[0].url} alt="" width="180px" />
+                                        <img className="playlist_img" src={play.images[0].url} alt="" width="180px" />
                                         <h3>{play.name}</h3>
                                         <p>{play.description}</p>
                                         </div>

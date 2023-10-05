@@ -29,28 +29,38 @@ font-weight: 800;
 transition: 350ms;
 
 }
-.H_text2:hover{
-    font-size:80px ;
-    background: linear-gradient(90deg,#00dbde,#fc00ff);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;   
+
+@media only screen and (min-width: 600px) {
+    .H_text2:hover{
+        font-size:80px ;
+        background: linear-gradient(90deg,#00dbde,#fc00ff);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;   
+    }
+    .H_text1:hover{
+        font-size: 65px;
+    }
 }
-.H_text1:hover{
-    font-size: 65px;
-}
+
 @media only screen and (max-width: 600px) {
     .H_text2{
-        display: none;
+        background: linear-gradient(90deg,#00dbde,#fc00ff);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color: transparent;   
+        left: 10px;
         }
     .H_text1{
         font-size: 30px;
-        top: 90%;
+        top: 650px;
+        left: 90px;
+        width: 300px;
     }
     .home_img1{
-        width: 500px;
+        margin-top: 30%;
+        width: 350px;
         height: 300px;
-        position: absolute;
-        top:50%;
-        left: 40px;
+       
     }
+  
+   
 }
